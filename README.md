@@ -13,10 +13,6 @@ The folders _bookshop-book-deployment_ and _bookshop-storages-deployment_ are th
 ## Deployment to launchpad
 
 For deployment please add the url of the backend service to the destination.json.
-
-
-Some color-syntaxing enrichment can be applied with the following blockcode syntax
-
 ```json
 {
   "init_data": {
