@@ -1,0 +1,22 @@
+{
+  "init_data": {
+    "instance": {
+      "existing_destinations_policy": "update",
+      "destinations": []
+    },
+    "subaccount": {
+      "existing_destinations_policy": "update",
+      "destinations": [
+        {
+          "Name": "Bookshop",
+          "Description": "Automatically generated Bookshop destination",
+          "Authentication": "NoAuthentication",
+          "ProxyType": "Internet",
+          "Type": "HTTP",
+          "URL": "TODO",
+          "HTML5.DynamicDestination": true
+        }
+      ]
+    }
+  }
+}
