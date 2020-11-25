@@ -1,0 +1,7 @@
+ID;book_ID;date;stock;storage_ID
+1;201;2020-01-01;103;storage1
+2;201;2020-01-02;99;storage1
+3;201;2020-01-03;15;storage1
+4;201;2020-01-04;305;storage2
+5;201;2020-01-05;200;storage2
+6;201;2020-01-06;150;storage3

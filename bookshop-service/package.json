@@ -1,0 +1,40 @@
+{
+  "name": "cap-tutorial",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^4",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.4.47",
+    "@sap/hana-client": "^2.4.177",
+    "express": "^4",
+    "mbt": "^1.0.16"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.78.10",
+    "sqlite3": "^5.0.0"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "cds": {
+    "preview": {
+      "ui5": {
+        "version": "1.80.2"
+      }
+    },
+    "requires": {
+      "db": {
+        "kind": "sql"
+      }
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  },
+  "sapux": [
+    "app/fioribooks"
+  ]
+}

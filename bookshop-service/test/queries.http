@@ -1,0 +1,46 @@
+GET http://localhost:4004/catalog/Books
+
+### 
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{
+    "ID": 1,
+    "title": "Harry Potter",
+    "stock": 1
+}
+
+
+### 
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{
+    "book_ID": 201,
+    "quantity": 1
+}
+
+###
+GET http://localhost:4004/catalog/Orders
+
+### 
+DELETE http://localhost:4004/catalog/Authors(150)
+
+### 
+GET http://localhost:4004/stats/OrderInfo
+
+### 
+GET http://localhost:4004/catalog/Books?
+&$expand=stock
+
+###
+GET http://localhost:4004/catalog/Books(201)/stock(1)?
+
+###
+GET http://localhost:4004/catalog/Books(201)/title?
+
+###
+GET http://localhost:4004/catalog/Books(201)/stock(ID=1,book_ID=201,storage_ID='storage1')/storage/ID
+
+### 
+GET http://localhost:4004/catalog/Storages(ID='storage1')
